@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'eval-project2';
+  title = 'Eval Project2';
+  inputTextArea:string = "";
+  inputEnable:boolean = false;
+  items: string [] = ['Gina Williams','Jake Williams','Jamie John','John Doe','Jeff Stewart','Paula M. Keith'];
+
+  addNote(){
+    this.inputEnable = true;
+  }
+  
+  reset(){
+    this.inputTextArea = "";
+    this.inputEnable = false;
+  }
+
 }
